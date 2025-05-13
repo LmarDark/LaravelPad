@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/{asd}', function ($asd) {
-    return view('index');
+use App\Http\Controllers\PadNameController;
+
+Route::get('/', function () {
+    return view('home');
 });
-/**
- * Verifica no banco se existe a rota, caso não exista retorna a textarea
- */
+
+Route::get('/{name}', [PadNameController::class, 'verifyIfExistsPadName']);
+Route::post('/save-text', [PadNameController::class, 'saveContentInDB']);
