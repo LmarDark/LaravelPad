@@ -10,10 +10,3 @@ Route::get('/', function () {
 
 Route::get('/{name}', [PadNameController::class, 'verifyIfExistsPadName']);
 Route::post('/save-text', [PadNameController::class, 'saveContentInDB']);
-
-/*Route::get('/{name}', function ($name) {
-    return view('index');
-});*/
-/**
- * Verifica no banco se existe a rota, caso não exista retorna a textarea
- */
