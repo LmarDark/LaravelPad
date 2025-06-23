@@ -21,8 +21,6 @@ class PadNameController extends Controller
         if(empty($nameDB)) {
             return view('index');
         }
-
-        //return view('index');
     }
 
     public static function saveContentInDB(Request $request) {
