@@ -6,18 +6,12 @@ A <a target="_blank" href="https://dontpad.com/">DontPad</a> clone built with La
   - PHP 8.3
   - Laravel 12
   - Tailwind
-  - React
-  - Inertia.js
-  - Pest
 
 # Requirements
 **Before getting started, make sure you have the following tools installed**:
   - PHP 8.3 ou superior
   - Composer
-  - Laravel 12
   - Node.js
-  - Um servidor web (Nginx)
-  - Um SGBD (MySQL)
 
 # Installation
 1. Clone the Repository::
@@ -48,7 +42,7 @@ touch database.sqlite
 
 7. Configure the database connection and session driver in the .env file:
 ```
-DB_CONNECTION= sqlite
+DB_CONNECTION=sqlite
 ```
 
 7. Generate the Application Key:
