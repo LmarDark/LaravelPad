@@ -45,13 +45,18 @@ touch ./database/database.sqlite
 DB_CONNECTION=sqlite
 ```
 
-7. Generate the Application Key:
+8. Make the migration:
+```
+php artisan migrate
+```
+
+9. Generate the Application Key:
 ```
 php artisan key:generate
 ```
 
 
-8. Start the Development Server:
+10. Start the Development Server:
 ```
 composer run dev
 ```
