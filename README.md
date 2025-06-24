@@ -37,7 +37,7 @@ cp .env.example .env
 
 5. Create the database.sqlite file:
 ```
-touch database.sqlite
+touch ./database/database.sqlite
 ```
 
 7. Configure the database connection and session driver in the .env file:
